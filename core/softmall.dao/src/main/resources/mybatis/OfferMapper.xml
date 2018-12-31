@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.softmall.core.dao.mapper.OfferMapper">
+    <resultMap id="BaseResultMap" type="com.softmall.core.dao.dataobject.Offer">
+        <id column="id" jdbcType="BIGINT" property="id"/>
+        <result column="gmt_create" jdbcType="TIMESTAMP" property="gmtCreate"/>
+        <result column="gmt_modified" jdbcType="TIMESTAMP" property="gmtModified"/>
+        <result column="item_id" jdbcType="BIGINT" property="itemId"/>
+        <result column="seller_id" jdbcType="BIGINT" property="sellerId"/>
+        <result column="item_price" jdbcType="DECIMAL" property="itemPrice"/>
+        <result column="item_img" jdbcType="VARCHAR" property="itemImg"/>
+        <result column="item_title" jdbcType="VARCHAR" property="itemTitle"/>
+        <result column="item_stk_count" jdbcType="BIGINT" property="itemStkCount"/>
+        <result column="attributes" jdbcType="CHAR" property="attributes"/>
+        <result column="status" jdbcType="VARCHAR" property="status"/>
+    </resultMap>
+    <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.softmall.core.dao.dataobject.Offer">
+        <result column="description" jdbcType="LONGVARCHAR" property="description"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+    id, gmt_create, gmt_modified, item_id, seller_id, item_price, item_img, item_title, 
+    item_stk_count, attributes, status
+  </sql>
+    <sql id="Blob_Column_List">
+    description
+  </sql>
+    <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="ResultMapWithBLOBs">
+        select
+        <include refid="Base_Column_List"/>
+        ,
+        <include refid="Blob_Column_List"/>
+        from offer
+        where id = #{id,jdbcType=BIGINT}
+    </select>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from offer
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+    <insert id="insert" parameterType="com.softmall.core.dao.dataobject.Offer">
+    insert into offer (id, gmt_create, gmt_modified, 
+      item_id, seller_id, item_price, 
+      item_img, item_title, item_stk_count, 
+      attributes, status, description
+      )
+    values (#{id,jdbcType=BIGINT}, #{gmtCreate,jdbcType=TIMESTAMP}, #{gmtModified,jdbcType=TIMESTAMP}, 
+      #{itemId,jdbcType=BIGINT}, #{sellerId,jdbcType=BIGINT}, #{itemPrice,jdbcType=DECIMAL}, 
+      #{itemImg,jdbcType=VARCHAR}, #{itemTitle,jdbcType=VARCHAR}, #{itemStkCount,jdbcType=BIGINT}, 
+      #{attributes,jdbcType=CHAR}, #{status,jdbcType=VARCHAR}, #{description,jdbcType=LONGVARCHAR}
+      )
+  </insert>
+    <insert id="insertSelective" parameterType="com.softmall.core.dao.dataobject.Offer">
+        insert into offer
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                id,
+            </if>
+            <if test="gmtCreate != null">
+                gmt_create,
+            </if>
+            <if test="gmtModified != null">
+                gmt_modified,
+            </if>
+            <if test="itemId != null">
+                item_id,
+            </if>
+            <if test="sellerId != null">
+                seller_id,
+            </if>
+            <if test="itemPrice != null">
+                item_price,
+            </if>
+            <if test="itemImg != null">
+                item_img,
+            </if>
+            <if test="itemTitle != null">
+                item_title,
+            </if>
+            <if test="itemStkCount != null">
+                item_stk_count,
+            </if>
+            <if test="attributes != null">
+                attributes,
+            </if>
+            <if test="status != null">
+                status,
+            </if>
+            <if test="description != null">
+                description,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                #{id,jdbcType=BIGINT},
+            </if>
+            <if test="gmtCreate != null">
+                #{gmtCreate,jdbcType=TIMESTAMP},
+            </if>
+            <if test="gmtModified != null">
+                #{gmtModified,jdbcType=TIMESTAMP},
+            </if>
+            <if test="itemId != null">
+                #{itemId,jdbcType=BIGINT},
+            </if>
+            <if test="sellerId != null">
+                #{sellerId,jdbcType=BIGINT},
+            </if>
+            <if test="itemPrice != null">
+                #{itemPrice,jdbcType=DECIMAL},
+            </if>
+            <if test="itemImg != null">
+                #{itemImg,jdbcType=VARCHAR},
+            </if>
+            <if test="itemTitle != null">
+                #{itemTitle,jdbcType=VARCHAR},
+            </if>
+            <if test="itemStkCount != null">
+                #{itemStkCount,jdbcType=BIGINT},
+            </if>
+            <if test="attributes != null">
+                #{attributes,jdbcType=CHAR},
+            </if>
+            <if test="status != null">
+                #{status,jdbcType=VARCHAR},
+            </if>
+            <if test="description != null">
+                #{description,jdbcType=LONGVARCHAR},
+            </if>
+        </trim>
+    </insert>
+    <update id="updateByPrimaryKeySelective" parameterType="com.softmall.core.dao.dataobject.Offer">
+        update offer
+        <set>
+            <if test="gmtCreate != null">
+                gmt_create = #{gmtCreate,jdbcType=TIMESTAMP},
+            </if>
+            <if test="gmtModified != null">
+                gmt_modified = #{gmtModified,jdbcType=TIMESTAMP},
+            </if>
+            <if test="itemId != null">
+                item_id = #{itemId,jdbcType=BIGINT},
+            </if>
+            <if test="sellerId != null">
+                seller_id = #{sellerId,jdbcType=BIGINT},
+            </if>
+            <if test="itemPrice != null">
+                item_price = #{itemPrice,jdbcType=DECIMAL},
+            </if>
+            <if test="itemImg != null">
+                item_img = #{itemImg,jdbcType=VARCHAR},
+            </if>
+            <if test="itemTitle != null">
+                item_title = #{itemTitle,jdbcType=VARCHAR},
+            </if>
+            <if test="itemStkCount != null">
+                item_stk_count = #{itemStkCount,jdbcType=BIGINT},
+            </if>
+            <if test="attributes != null">
+                attributes = #{attributes,jdbcType=CHAR},
+            </if>
+            <if test="status != null">
+                status = #{status,jdbcType=VARCHAR},
+            </if>
+            <if test="description != null">
+                description = #{description,jdbcType=LONGVARCHAR},
+            </if>
+        </set>
+        where id = #{id,jdbcType=BIGINT}
+    </update>
+    <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.softmall.core.dao.dataobject.Offer">
+    update offer
+    set gmt_create = #{gmtCreate,jdbcType=TIMESTAMP},
+      gmt_modified = #{gmtModified,jdbcType=TIMESTAMP},
+      item_id = #{itemId,jdbcType=BIGINT},
+      seller_id = #{sellerId,jdbcType=BIGINT},
+      item_price = #{itemPrice,jdbcType=DECIMAL},
+      item_img = #{itemImg,jdbcType=VARCHAR},
+      item_title = #{itemTitle,jdbcType=VARCHAR},
+      item_stk_count = #{itemStkCount,jdbcType=BIGINT},
+      attributes = #{attributes,jdbcType=CHAR},
+      status = #{status,jdbcType=VARCHAR},
+      description = #{description,jdbcType=LONGVARCHAR}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+    <update id="updateByPrimaryKey" parameterType="com.softmall.core.dao.dataobject.Offer">
+    update offer
+    set gmt_create = #{gmtCreate,jdbcType=TIMESTAMP},
+      gmt_modified = #{gmtModified,jdbcType=TIMESTAMP},
+      item_id = #{itemId,jdbcType=BIGINT},
+      seller_id = #{sellerId,jdbcType=BIGINT},
+      item_price = #{itemPrice,jdbcType=DECIMAL},
+      item_img = #{itemImg,jdbcType=VARCHAR},
+      item_title = #{itemTitle,jdbcType=VARCHAR},
+      item_stk_count = #{itemStkCount,jdbcType=BIGINT},
+      attributes = #{attributes,jdbcType=CHAR},
+      status = #{status,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+</mapper>
