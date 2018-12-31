@@ -6,21 +6,20 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="gg.api" />
-        <module name="gg.common" />
-        <module name="gg.dao" />
-        <module name="gg.service" />
-        <module name="gg.web" />
+        <module name="softmall.api" />
+        <module name="softmall.common" />
+        <module name="softmall.dao" />
+        <module name="softmall.web" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="gg.api" target="1.7" />
-      <module name="gg.common" target="1.7" />
-      <module name="gg.core" target="1.7" />
-      <module name="gg.dao" target="1.7" />
-      <module name="gg.service" target="1.7" />
-      <module name="gg.web" target="1.7" />
-      <module name="guangguang" target="1.7" />
+      <module name="softmall" target="1.7" />
+      <module name="softmall.api" target="1.7" />
+      <module name="softmall.common" target="1.7" />
+      <module name="softmall.core" target="1.7" />
+      <module name="softmall.dao" target="1.7" />
+      <module name="softmall.service" target="1.6" />
+      <module name="softmall.web" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>

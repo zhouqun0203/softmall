@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/api/gg.api.iml" filepath="$PROJECT_DIR$/api/gg.api.iml" />
-      <module fileurl="file://$PROJECT_DIR$/common/gg.common.iml" filepath="$PROJECT_DIR$/common/gg.common.iml" />
-      <module fileurl="file://$PROJECT_DIR$/core/gg.core.iml" filepath="$PROJECT_DIR$/core/gg.core.iml" />
-      <module fileurl="file://$PROJECT_DIR$/core/gg.dao/gg.dao.iml" filepath="$PROJECT_DIR$/core/gg.dao/gg.dao.iml" />
-      <module fileurl="file://$PROJECT_DIR$/core/gg.service/gg.service.iml" filepath="$PROJECT_DIR$/core/gg.service/gg.service.iml" />
-      <module fileurl="file://$PROJECT_DIR$/web/gg.web.iml" filepath="$PROJECT_DIR$/web/gg.web.iml" />
-      <module fileurl="file://$PROJECT_DIR$/guangguang.iml" filepath="$PROJECT_DIR$/guangguang.iml" />
+      <module fileurl="file://$PROJECT_DIR$/softmall.iml" filepath="$PROJECT_DIR$/softmall.iml" />
+      <module fileurl="file://$PROJECT_DIR$/api/softmall.api.iml" filepath="$PROJECT_DIR$/api/softmall.api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common/softmall.common.iml" filepath="$PROJECT_DIR$/common/softmall.common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/core/softmall.dao/softmall.dao.iml" filepath="$PROJECT_DIR$/core/softmall.dao/softmall.dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/core/softmall.service/softmall.service.iml" filepath="$PROJECT_DIR$/core/softmall.service/softmall.service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web/softmall.web.iml" filepath="$PROJECT_DIR$/web/softmall.web.iml" />
     </modules>
   </component>
 </project>

@@ -4,9 +4,11 @@
       <root url="jar://$MAVEN_REPOSITORY$/com/dxd/apps/softmall.service/1.0-SNAPSHOT/softmall.service-1.0-SNAPSHOT.jar!/" />
     </CLASSES>
     <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/core/softmall.service/softmall.service-1.0-SNAPSHOT-javadoc.jar!/" />
       <root url="jar://$MAVEN_REPOSITORY$/com/dxd/apps/softmall.service/1.0-SNAPSHOT/softmall.service-1.0-SNAPSHOT-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
+      <root url="jar://$PROJECT_DIR$/core/softmall.service/softmall.service-1.0-SNAPSHOT-sources.jar!/" />
       <root url="jar://$MAVEN_REPOSITORY$/com/dxd/apps/softmall.service/1.0-SNAPSHOT/softmall.service-1.0-SNAPSHOT-sources.jar!/" />
     </SOURCES>
   </library>
