@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/softmall.iml" filepath="$PROJECT_DIR$/softmall.iml" />
       <module fileurl="file://$PROJECT_DIR$/api/softmall.api.iml" filepath="$PROJECT_DIR$/api/softmall.api.iml" />
       <module fileurl="file://$PROJECT_DIR$/common/softmall.common.iml" filepath="$PROJECT_DIR$/common/softmall.common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/core/softmall.core.iml" filepath="$PROJECT_DIR$/core/softmall.core.iml" />
       <module fileurl="file://$PROJECT_DIR$/core/softmall.dao/softmall.dao.iml" filepath="$PROJECT_DIR$/core/softmall.dao/softmall.dao.iml" />
       <module fileurl="file://$PROJECT_DIR$/core/softmall.service/softmall.service.iml" filepath="$PROJECT_DIR$/core/softmall.service/softmall.service.iml" />
       <module fileurl="file://$PROJECT_DIR$/web/softmall.web.iml" filepath="$PROJECT_DIR$/web/softmall.web.iml" />

@@ -9,6 +9,7 @@
         <module name="softmall.api" />
         <module name="softmall.common" />
         <module name="softmall.dao" />
+        <module name="softmall.service" />
         <module name="softmall.web" />
       </profile>
     </annotationProcessing>
@@ -18,7 +19,7 @@
       <module name="softmall.common" target="1.7" />
       <module name="softmall.core" target="1.7" />
       <module name="softmall.dao" target="1.7" />
-      <module name="softmall.service" target="1.6" />
+      <module name="softmall.service" target="1.7" />
       <module name="softmall.web" target="1.7" />
     </bytecodeTargetLevel>
   </component>
