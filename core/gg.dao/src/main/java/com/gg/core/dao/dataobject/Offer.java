@@ -5,6 +5,9 @@ import lombok.Data;
 import java.math.BigDecimal;
 import java.util.Date;
 
+/**
+ * @author zhouqun
+ */
 @Data
 public class Offer {
     private Long id;

@@ -1,9 +1,9 @@
-package com.gg.core.dao.dataobject;
-
-import lombok.Data;
+package com.gg.api.domain;
 
 import java.math.BigDecimal;
 import java.util.Date;
+
+import lombok.Data;
 
 /**
  * @author zhouqun

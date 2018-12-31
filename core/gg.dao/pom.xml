@@ -12,16 +12,8 @@
     <artifactId>gg.dao</artifactId>
     <dependencies>
         <dependency>
-            <groupId>com.dxd.apps</groupId>
-            <artifactId>gg.domain</artifactId>
-            <version>1.0-SNAPSHOT</version>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
         </dependency>
     </dependencies>
-
-
 </project>

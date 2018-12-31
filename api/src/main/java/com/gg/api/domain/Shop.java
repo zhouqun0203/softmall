@@ -1,8 +1,8 @@
-package com.gg.core.dao.dataobject;
-
-import lombok.Data;
+package com.gg.api.domain;
 
 import java.util.Date;
+
+import lombok.Data;
 
 /**
  * @author zhouqun

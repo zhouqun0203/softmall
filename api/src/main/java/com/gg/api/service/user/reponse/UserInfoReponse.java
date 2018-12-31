@@ -1,4 +1,4 @@
-package com.gg.core.dao.dataobject;
+package com.gg.api.service.user.reponse;
 
 import java.util.Date;
 
@@ -8,7 +8,7 @@ import lombok.Data;
  * @author zhouqun
  */
 @Data
-public class UserInfo {
+public class UserInfoReponse {
     private Long id;
 
     private Date gmtCreate;
