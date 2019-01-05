@@ -2,6 +2,8 @@ package com.softmall.core.dao.mapper;
 
 import com.softmall.core.dao.dataobject.Shop;
 
+import java.util.List;
+
 public interface ShopMapper {
     int deleteByPrimaryKey(Long id);
 
@@ -14,4 +16,7 @@ public interface ShopMapper {
     int updateByPrimaryKeySelective(Shop record);
 
     int updateByPrimaryKey(Shop record);
+
+    List<Shop> selectPagedShops(Long id);
+
 }
