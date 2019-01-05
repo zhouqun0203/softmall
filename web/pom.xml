@@ -13,25 +13,31 @@
     <dependencies>
         <dependency>
             <groupId>com.dxd.apps</groupId>
-            <artifactId>softmall.service</artifactId>
-            <version>1.0-SNAPSHOT</version>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.dxd.apps</groupId>
             <artifactId>softmall.web</artifactId>
             <version>1.0-SNAPSHOT</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>com.dxd.apps</groupId>
-            <artifactId>softmall.core</artifactId>
+            <artifactId>softmall.api</artifactId>
             <version>1.0-SNAPSHOT</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>com.dxd.apps</groupId>
-            <artifactId>softmall.api</artifactId>
+            <artifactId>softmall.core.service</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.dxd.apps</groupId>
+            <artifactId>softmall.core.domain</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.dxd.apps</groupId>
+            <artifactId>softmall.core.dao</artifactId>
             <version>1.0-SNAPSHOT</version>
             <scope>compile</scope>
         </dependency>

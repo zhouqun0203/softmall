@@ -174,4 +174,11 @@
       status = #{status,jdbcType=VARCHAR}
     where id = #{id,jdbcType=BIGINT}
   </update>
+
+    <select id="selectPagedShops" parameterType="com.softmall.core.dao.dataobject.ShopDO" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from shop
+        where 1 = 1
+    </select>
 </mapper>

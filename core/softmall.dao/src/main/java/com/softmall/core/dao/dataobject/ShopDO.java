@@ -8,7 +8,7 @@ import java.util.Date;
  * @author zhouqun
  */
 @Data
-public class ShopDO {
+public class ShopDO extends BaseDO {
     private Long id;
 
     private Date gmtCreate;

@@ -5,18 +5,18 @@ import com.softmall.core.dao.dataobject.ShopDO;
 import java.util.List;
 
 public interface ShopMapper {
-    int deleteByPrimaryKey(Long id);
+    int deleteByPrimaryKey(Long query);
 
-    int insert(ShopDO record);
+    int insert(ShopDO insert);
 
-    int insertSelective(ShopDO record);
+    int insertSelective(ShopDO insert);
 
-    ShopDO selectByPrimaryKey(Long id);
+    ShopDO selectByPrimaryKey(Long query);
 
-    int updateByPrimaryKeySelective(ShopDO record);
+    int updateByPrimaryKeySelective(ShopDO update);
 
-    int updateByPrimaryKey(ShopDO record);
+    int updateByPrimaryKey(ShopDO update);
 
-    List<ShopDO> selectPagedShops(Long id);
+    List<ShopDO> selectPagedShops(ShopDO query);
 
 }

@@ -21,8 +21,9 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="softmall.dao" />
     <orderEntry type="module" module-name="softmall.domain" />
+    <orderEntry type="library" name="Maven: com.github.pagehelper:pagehelper:5.1.8" level="project" />
+    <orderEntry type="library" name="Maven: com.github.jsqlparser:jsqlparser:1.2" level="project" />
     <orderEntry type="library" name="Maven: org.projectlombok:lombok:1.16.14" level="project" />
-    <orderEntry type="library" name="Maven: com.github.pagehelper:pagehelper:unknown" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-jdbc:1.5.2.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter:1.5.2.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot:1.5.2.RELEASE" level="project" />

@@ -20,9 +20,10 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="Maven: com.dxd.apps:softmall.service:1.0-SNAPSHOT" level="project" />
-    <orderEntry type="module" module-name="softmall.core" />
     <orderEntry type="module" module-name="softmall.api" />
+    <orderEntry type="module" module-name="softmall.service" />
+    <orderEntry type="module" module-name="softmall.domain" />
+    <orderEntry type="module" module-name="softmall.dao" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-jdbc:1.5.2.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter:1.5.2.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot:1.5.2.RELEASE" level="project" />
