@@ -8,7 +8,7 @@ import lombok.Data;
  * @author zhouqun
  */
 @Data
-public class UserInfo {
+public class UserInfoDO {
     private Long id;
 
     private Date gmtCreate;

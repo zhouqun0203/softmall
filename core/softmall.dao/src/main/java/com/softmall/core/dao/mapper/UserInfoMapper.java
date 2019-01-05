@@ -1,6 +1,6 @@
 package com.softmall.core.dao.mapper;
 
-import com.softmall.core.dao.dataobject.UserInfo;
+import com.softmall.core.dao.dataobject.UserInfoDO;
 
 /**
  * @author zhouqun
@@ -20,7 +20,7 @@ public interface UserInfoMapper {
      * @param record
      * @return
      */
-    int insert(UserInfo record);
+    int insert(UserInfoDO record);
 
     /**
      * 新增用户
@@ -28,7 +28,7 @@ public interface UserInfoMapper {
      * @param record
      * @return
      */
-    int insertSelective(UserInfo record);
+    int insertSelective(UserInfoDO record);
 
     /**
      * 根据主键userId进行查询
@@ -36,7 +36,7 @@ public interface UserInfoMapper {
      * @param userId
      * @return
      */
-    UserInfo selectByPrimaryKey(Long userId);
+    UserInfoDO selectByPrimaryKey(Long userId);
 
     /**
      * 根据主键userId进行查询
@@ -44,7 +44,7 @@ public interface UserInfoMapper {
      * @param openId
      * @return
      */
-    UserInfo selectByOpenId(String openId);
+    UserInfoDO selectByOpenId(String openId);
 
     /**
      * 根据主键更新用户信息
@@ -52,7 +52,7 @@ public interface UserInfoMapper {
      * @param record
      * @return
      */
-    int updateByPrimaryKeySelective(UserInfo record);
+    int updateByPrimaryKeySelective(UserInfoDO record);
 
     /**
      * 根据主键更新用户信息
@@ -60,5 +60,5 @@ public interface UserInfoMapper {
      * @param record
      * @return
      */
-    int updateByPrimaryKey(UserInfo record);
+    int updateByPrimaryKey(UserInfoDO record);
 }

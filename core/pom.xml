@@ -8,14 +8,18 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
+    <version>${softmall.core.version}</version>
 
     <artifactId>softmall.core</artifactId>
     <packaging>pom</packaging>
     <modules>
         <module>softmall.dao</module>
         <module>softmall.service</module>
+        <module>softmall.domain</module>
     </modules>
-
+    <properties>
+        <softmall.core.version>1.0-SNAPSHOT</softmall.core.version>
+    </properties>
     <dependencies>
         <dependency>
             <groupId>org.projectlombok</groupId>

@@ -1,17 +1,17 @@
 package com.softmall.core.dao.mapper;
 
-import com.softmall.core.dao.dataobject.MarketCenter;
+import com.softmall.core.dao.dataobject.MarketCenterDO;
 
 public interface MarketCenterMapper {
     int deleteByPrimaryKey(Long id);
 
-    int insert(MarketCenter record);
+    int insert(MarketCenterDO record);
 
-    int insertSelective(MarketCenter record);
+    int insertSelective(MarketCenterDO record);
 
-    MarketCenter selectByPrimaryKey(Long id);
+    MarketCenterDO selectByPrimaryKey(Long id);
 
-    int updateByPrimaryKeySelective(MarketCenter record);
+    int updateByPrimaryKeySelective(MarketCenterDO record);
 
-    int updateByPrimaryKey(MarketCenter record);
+    int updateByPrimaryKey(MarketCenterDO record);
 }

@@ -9,19 +9,18 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>softmall.core.service</artifactId>
+    <artifactId>softmall.core.domain</artifactId>
     <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
         <dependency>
             <groupId>com.dxd.apps</groupId>
             <artifactId>softmall.core.dao</artifactId>
-            <version>${softmall.core.version}</version>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.dxd.apps</groupId>
-            <artifactId>softmall.core.domain</artifactId>
-            <version>${softmall.core.version}</version>
+            <version>1.0-SNAPSHOT</version>
             <scope>compile</scope>
         </dependency>
     </dependencies>
+
 </project>

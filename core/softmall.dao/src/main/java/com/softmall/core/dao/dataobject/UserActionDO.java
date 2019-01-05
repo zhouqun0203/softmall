@@ -2,36 +2,28 @@ package com.softmall.core.dao.dataobject;
 
 import lombok.Data;
 
-import java.math.BigDecimal;
 import java.util.Date;
 
 /**
  * @author zhouqun
  */
 @Data
-public class Offer {
+public class UserActionDO {
     private Long id;
 
     private Date gmtCreate;
 
     private Date gmtModified;
 
-    private Long itemId;
+    private Long userId;
 
-    private Long sellerId;
+    private String actionType;
 
-    private BigDecimal itemPrice;
+    private String outBizId;
 
-    private String itemImg;
-
-    private String itemTitle;
-
-    private Long itemStkCount;
+    private String comment;
 
     private String attributes;
 
     private String status;
-
-    private String description;
-
 }

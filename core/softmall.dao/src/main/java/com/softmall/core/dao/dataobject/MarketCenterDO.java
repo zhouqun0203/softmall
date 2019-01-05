@@ -2,32 +2,33 @@ package com.softmall.core.dao.dataobject;
 
 import lombok.Data;
 
+import java.math.BigDecimal;
 import java.util.Date;
 
 /**
  * @author zhouqun
  */
 @Data
-public class Shop {
+public class MarketCenterDO {
     private Long id;
 
     private Date gmtCreate;
 
     private Date gmtModified;
 
+    private Long itemId;
+
+    private BigDecimal discountFee;
+
     private Long sellerId;
 
-    private String shopName;
+    private String activityName;
 
-    private Long areaCode;
+    private Long activityStkCount;
 
-    private String addressDetail;
+    private Date startTime;
 
-    private String longitude;
-
-    private String latitude;
-
-    private String brandName;
+    private Date endTime;
 
     private String attributes;
 

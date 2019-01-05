@@ -8,22 +8,29 @@ import java.util.Date;
  * @author zhouqun
  */
 @Data
-public class UserAction {
+public class ShopDO {
     private Long id;
 
     private Date gmtCreate;
 
     private Date gmtModified;
 
-    private Long userId;
+    private Long sellerId;
 
-    private String actionType;
+    private String shopName;
 
-    private String outBizId;
+    private Long areaCode;
 
-    private String comment;
+    private String addressDetail;
+
+    private String longitude;
+
+    private String latitude;
+
+    private String brandName;
 
     private String attributes;
 
     private String status;
+
 }

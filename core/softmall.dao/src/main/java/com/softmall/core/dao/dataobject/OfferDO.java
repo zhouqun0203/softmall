@@ -9,7 +9,7 @@ import java.util.Date;
  * @author zhouqun
  */
 @Data
-public class MarketCenter {
+public class OfferDO {
     private Long id;
 
     private Date gmtCreate;
@@ -18,20 +18,20 @@ public class MarketCenter {
 
     private Long itemId;
 
-    private BigDecimal discountFee;
-
     private Long sellerId;
 
-    private String activityName;
+    private BigDecimal itemPrice;
 
-    private Long activityStkCount;
+    private String itemImg;
 
-    private Date startTime;
+    private String itemTitle;
 
-    private Date endTime;
+    private Long itemStkCount;
 
     private String attributes;
 
     private String status;
+
+    private String description;
 
 }

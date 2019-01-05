@@ -1,17 +1,17 @@
 package com.softmall.core.dao.mapper;
 
-import com.softmall.core.dao.dataobject.TradeOrder;
+import com.softmall.core.dao.dataobject.TradeOrderDO;
 
 public interface TradeOrderMapper {
     int deleteByPrimaryKey(Integer id);
 
-    int insert(TradeOrder record);
+    int insert(TradeOrderDO record);
 
-    int insertSelective(TradeOrder record);
+    int insertSelective(TradeOrderDO record);
 
-    TradeOrder selectByPrimaryKey(Integer id);
+    TradeOrderDO selectByPrimaryKey(Integer id);
 
-    int updateByPrimaryKeySelective(TradeOrder record);
+    int updateByPrimaryKeySelective(TradeOrderDO record);
 
-    int updateByPrimaryKey(TradeOrder record);
+    int updateByPrimaryKey(TradeOrderDO record);
 }

@@ -1,19 +1,19 @@
 package com.softmall.core.dao.mapper;
 
-import com.softmall.core.dao.dataobject.Offer;
+import com.softmall.core.dao.dataobject.OfferDO;
 
 public interface OfferMapper {
     int deleteByPrimaryKey(Long id);
 
-    int insert(Offer record);
+    int insert(OfferDO record);
 
-    int insertSelective(Offer record);
+    int insertSelective(OfferDO record);
 
-    Offer selectByPrimaryKey(Long id);
+    OfferDO selectByPrimaryKey(Long id);
 
-    int updateByPrimaryKeySelective(Offer record);
+    int updateByPrimaryKeySelective(OfferDO record);
 
-    int updateByPrimaryKeyWithBLOBs(Offer record);
+    int updateByPrimaryKeyWithBLOBs(OfferDO record);
 
-    int updateByPrimaryKey(Offer record);
+    int updateByPrimaryKey(OfferDO record);
 }

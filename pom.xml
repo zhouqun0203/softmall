@@ -20,6 +20,7 @@
         <module>api</module>
         <module>common</module>
         <module>core</module>
+        <module>process</module>
     </modules>
 
     <properties>

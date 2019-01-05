@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.softmall.core.dao.mapper.ShopMapper">
-    <resultMap id="BaseResultMap" type="com.softmall.core.dao.dataobject.Shop">
+    <resultMap id="BaseResultMap" type="com.softmall.core.dao.dataobject.ShopDO">
         <id column="id" jdbcType="BIGINT" property="id"/>
         <result column="gmt_create" jdbcType="TIMESTAMP" property="gmtCreate"/>
         <result column="gmt_modified" jdbcType="TIMESTAMP" property="gmtModified"/>
@@ -29,7 +29,7 @@
     delete from shop
     where id = #{id,jdbcType=BIGINT}
   </delete>
-    <insert id="insert" parameterType="com.softmall.core.dao.dataobject.Shop">
+    <insert id="insert" parameterType="com.softmall.core.dao.dataobject.ShopDO">
     insert into shop (id, gmt_create, gmt_modified, 
       seller_id, shop_name, area_code, 
       address_detail, longitude, latitude, 
@@ -41,7 +41,7 @@
       #{brandName,jdbcType=VARCHAR}, #{attributes,jdbcType=CHAR}, #{status,jdbcType=VARCHAR}
       )
   </insert>
-    <insert id="insertSelective" parameterType="com.softmall.core.dao.dataobject.Shop">
+    <insert id="insertSelective" parameterType="com.softmall.core.dao.dataobject.ShopDO">
         insert into shop
         <trim prefix="(" suffix=")" suffixOverrides=",">
             <if test="id != null">
@@ -120,7 +120,7 @@
             </if>
         </trim>
     </insert>
-    <update id="updateByPrimaryKeySelective" parameterType="com.softmall.core.dao.dataobject.Shop">
+    <update id="updateByPrimaryKeySelective" parameterType="com.softmall.core.dao.dataobject.ShopDO">
         update shop
         <set>
             <if test="gmtCreate != null">
@@ -159,7 +159,7 @@
         </set>
         where id = #{id,jdbcType=BIGINT}
     </update>
-    <update id="updateByPrimaryKey" parameterType="com.softmall.core.dao.dataobject.Shop">
+    <update id="updateByPrimaryKey" parameterType="com.softmall.core.dao.dataobject.ShopDO">
     update shop
     set gmt_create = #{gmtCreate,jdbcType=TIMESTAMP},
       gmt_modified = #{gmtModified,jdbcType=TIMESTAMP},

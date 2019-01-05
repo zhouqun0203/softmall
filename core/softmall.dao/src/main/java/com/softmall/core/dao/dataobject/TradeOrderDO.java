@@ -9,7 +9,7 @@ import java.util.Date;
  * @author zhouqun
  */
 @Data
-public class TradeOrder {
+public class TradeOrderDO {
     private Integer id;
 
     private Long bizOrderId;

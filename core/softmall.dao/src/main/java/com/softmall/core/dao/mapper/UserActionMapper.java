@@ -1,17 +1,17 @@
 package com.softmall.core.dao.mapper;
 
-import com.softmall.core.dao.dataobject.UserAction;
+import com.softmall.core.dao.dataobject.UserActionDO;
 
 public interface UserActionMapper {
     int deleteByPrimaryKey(Long id);
 
-    int insert(UserAction record);
+    int insert(UserActionDO record);
 
-    int insertSelective(UserAction record);
+    int insertSelective(UserActionDO record);
 
-    UserAction selectByPrimaryKey(Long id);
+    UserActionDO selectByPrimaryKey(Long id);
 
-    int updateByPrimaryKeySelective(UserAction record);
+    int updateByPrimaryKeySelective(UserActionDO record);
 
-    int updateByPrimaryKey(UserAction record);
+    int updateByPrimaryKey(UserActionDO record);
 }

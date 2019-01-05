@@ -6,21 +6,26 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="process" />
         <module name="softmall.api" />
         <module name="softmall.common" />
         <module name="softmall.dao" />
+        <module name="softmall.domain" />
         <module name="softmall.service" />
         <module name="softmall.web" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="process" target="1.8" />
       <module name="softmall" target="1.8" />
       <module name="softmall.api" target="1.8" />
       <module name="softmall.common" target="1.8" />
       <module name="softmall.core" target="1.8" />
       <module name="softmall.dao" target="1.8" />
+      <module name="softmall.domain" target="1.8" />
       <module name="softmall.service" target="1.8" />
       <module name="softmall.web" target="1.8" />
+      <module name="softmallprocess" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
